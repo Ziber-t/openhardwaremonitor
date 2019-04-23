@@ -13,9 +13,9 @@ using System.Reflection;
 using System.Runtime.InteropServices;
 
 [assembly: AssemblyTitle("Open Hardware Monitor Library")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription(" Edit by ZIBER-T")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Edit by ZIBER_T")]
 [assembly: AssemblyProduct("Open Hardware Monitor Library")]
 [assembly: AssemblyCopyright("Copyright © 2009-2017 Michael Möller")]
 [assembly: AssemblyTrademark("")]

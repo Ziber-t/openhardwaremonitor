@@ -14,18 +14,20 @@ using System.ComponentModel;
 using System.Diagnostics;
 using System.Drawing;
 using System.Windows.Forms;
+using System.Reflection;
+using System.Runtime.InteropServices;
 
 namespace OpenHardwareMonitor.GUI {
   public partial class AboutBox : Form {
     public AboutBox() {
       InitializeComponent();
-      this.Font = SystemFonts.MessageBoxFont;
-      this.label3.Text = "Version " + 
-        System.Windows.Forms.Application.ProductVersion;
-
+      Font = SystemFonts.MessageBoxFont;
+      label3.Text = "Version " + Application.ProductVersion;
+      label4.Text = Application.CompanyName;
+      projectLinkLabel.Text = "Edit by ZIBER-T";
       projectLinkLabel.Links.Remove(projectLinkLabel.Links[0]);
       projectLinkLabel.Links.Add(0, projectLinkLabel.Text.Length,
-        "http://openhardwaremonitor.org");
+        "https://github.com/Ziber-t/openhardwaremonitor");
 
       licenseLinkLabel.Links.Remove(licenseLinkLabel.Links[0]);
       licenseLinkLabel.Links.Add(0, licenseLinkLabel.Text.Length,
